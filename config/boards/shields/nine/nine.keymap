@@ -230,6 +230,5 @@
                                 &to AL1    &trans            &trans  &none
         >;
         };
-        
     };
 };
