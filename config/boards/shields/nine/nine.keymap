@@ -47,10 +47,9 @@
             bindings = <&to NUM>;
         };
         combo_bt  {
-            timeout-ms = <10>;
-            key-positions = <11 12>;
+            timeout-ms = <20>;
+            key-positions = <3 4 5 13 17>;
             bindings = <&to BT>;
-        layers = <SM1>;
         };
         combo_fun  {
             timeout-ms = <10>;
