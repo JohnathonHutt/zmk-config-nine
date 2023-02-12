@@ -173,7 +173,7 @@
                 sym1 {
                 label = "Code";
         bindings = <
-                    &kp STAR    &kp LS(N3)  &kp DLLR                       &kp LS(COMMA)   &kp LS(DOT)     &kp MINUS
+                   &hl_l STAR &out OUT_BLE    &kp LS(N3)  &kp DLLR                       &kp LS(COMMA)   &kp LS(DOT)     &kp MINUS
         &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET                      &kp LBKT        &kp RBKT        &kp PIPE    &kp SLASH
                                 &trans      &trans                         &trans      &trans
         >;
