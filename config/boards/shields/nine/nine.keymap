@@ -47,9 +47,10 @@
             bindings = <&to NUM>;
         };
         combo_bt  {
-            timeout-ms = <20>;
-            key-positions = <3 4 5 13 17>;
+            timeout-ms = <30>;
+            key-positions = <3 4 5>;
             bindings = <&to BT>;
+            layers = <AL1>;
         };
         combo_fun  {
             timeout-ms = <10>;
@@ -173,7 +174,7 @@
                 sym1 {
                 label = "Code";
         bindings = <
-                   &hl_l STAR &out OUT_BLE    &kp LS(N3)  &kp DLLR                       &kp LS(COMMA)   &kp LS(DOT)     &kp MINUS
+                   &kp STAR     &kp LS(N3)  &kp DLLR                       &kp LS(COMMA)   &kp LS(DOT)     &kp MINUS
         &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET                      &kp LBKT        &kp RBKT        &kp PIPE    &kp SLASH
                                 &trans      &trans                         &trans      &trans
         >;
