@@ -25,9 +25,8 @@
 #define SM2 3
 #define NUM 4
 #define SYS 5
-#define BT 6
-#define FUN 7
-#define AL2U 8
+#define FUN 6
+#define AL2U 7
 / { 
     combos {
         compatible = "zmk,combos";
@@ -46,12 +45,6 @@
             key-positions = <0 1 2>;
             bindings = <&to NUM>;
             layers = <AL1>;
-        };
-        combo_bt  {
-            timeout-ms = <30>;
-            key-positions = <3 4 5>;
-            bindings = <&to BT>;
-            layers = <NUM>;
         };
         combo_fun  {
             timeout-ms = <10>;
@@ -163,21 +156,23 @@
                                 &mt LC(LS(LALT)) SPC        &shrep LSHIFT 0             &caps_alpha2macro     &alpha2macro
         >;
         };
-                alpha2 {
+        
+                        alpha2 {
                 label = "Al2";
         bindings = <
-                    &kp V       &kp W               &kp M           &kp F       &kp SQT             &kp Z
-        &kp Q       &kp J       &kp P               &kp K           &kp B       &kp DOT             &kp X       &kp Y
+                    &kp Q       &kp V               &kp P           &kp J       &kp SQT             &kp Y
+        &kp W       &kp Z       &kp X               &kp B           &kp K       &kp M               &kp F     &kp DOT
                                 &sr LSHIFT AL1      &none           &none       &sl AL2U
         >;
-        };
+        }; 
+        
 
                 sym1 {
                 label = "Code";
         bindings = <
                    &kp STAR     &kp LS(N3)  &kp DLLR                       &kp LS(COMMA)   &kp LS(DOT)     &kp MINUS
         &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET                      &kp LBKT        &kp RBKT        &kp PIPE    &kp SLASH
-                                &trans      &trans                         &trans      &trans
+                                &trans      &trans                         &trans          &trans
         >;
         };
         sym2 {
@@ -195,7 +190,7 @@
         bindings = <
                           &hm_l LCTL DOT      &hm_l LALT N0   &hm_l LGUI N1       &hm_r RGUI N2   &hm_r LALT N3    &hm_r RCTL N4
         &td SLASH MINUS   &td STAR PLUS       &kp N5          &kp N6              &kp N7          &kp N8           &kp N9         &kp EQUAL
-                                              &sr LSHIFT AL1  &out OUT_TOG        &bt BT_NXT      &kp RGUI
+                                              &sr LSHIFT AL1  &bt BT_CLR          &bt BT_NXT      &kp RGUI
         >;
         };
 
@@ -208,14 +203,6 @@
         >;
         };
 
-        bt {
-        label = "BT";
-        bindings = <
-                  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2           &bt BT_SEL 3     &bt BT_SEL 4   &trans
-        &trans    &out OUT_BLE    &out OUT_USB  &trans                 &none            &none          &none  &bt BT_CLR
-                                  &to AL1       &none                  &none     &none
-        >;
-        };
         fun {
         label = "Fn";
             bindings = <
@@ -227,10 +214,19 @@
                 alpha2cap {
                 label = "Al2Caps";
         bindings = <
-                    &kp LS(V)   &kp LS(W)   &kp LS(M)           &kp LS(F)   &kp DQT      &kp LS(Z)
-        &kp LS(Q)   &kp LS(J)   &kp LS(P)   &kp LS(K)           &kp LS(B)   &kp COMMA    &kp LS(X)   &kp LS(Y)
-                                &to AL1    &trans            &trans  &none
+                    &kp LS(Q)   &kp LS(V)   &kp LS(P)           &kp LS(J)   &kp SQT      &kp LS(Y)
+        &kp LS(W)   &kp LS(Z)   &kp LS(X)   &kp LS(B)           &kp LS(K)   &kp LS(M)    &kp LS(F)   &kp COMMA
+                                &to AL1    &trans               &trans  &out OUT_TOG 
         >;
         };
     };
+    
+                           alpha2 {
+                label = "Al2";
+        bindings = <
+                    &kp Q       &kp V               &kp P           &kp J       &kp SQT             &kp Y
+        &kp W       &kp Z       &kp X               &kp B           &kp K       &kp M               &kp F     &kp DOT
+                                &sr LSHIFT AL1      &none           &none       &sl AL2U
+        >;
+        };
 };
