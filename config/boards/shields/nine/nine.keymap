@@ -215,7 +215,7 @@
                 label = "Al2Caps";
         bindings = <
                     &kp LS(W)   &kp LS(V)   &kp LS(P)           &kp LS(J)   &kp DQT      &kp LS(M)
-        &kp LS(Q)   &kp LS(Z)   &kp LS(X)   &kp LS(B)           &kp LS(K)   &kp LS(F)    &kp LS(COMMA)   &kp LS(Y)
+        &kp LS(Q)   &kp LS(Z)   &kp LS(X)   &kp LS(B)           &kp LS(K)   &kp LS(F)    &kp COMMA   &kp LS(Y)
                                 &to AL1    &trans               &trans  &out OUT_TOG 
         >;
         };
