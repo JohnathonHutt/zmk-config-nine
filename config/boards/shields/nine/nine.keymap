@@ -142,6 +142,31 @@
         bindings = < &sl AL2U >;
     };
     };
+    
+    macros {
+    ws_find: ws_find {
+        compatible = "zmk,behavior-macro";
+        label = "ws_find_macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_tap>,
+            <&kp LEFT_SHIFT &kp LEFT_SHIFT>;
+    };
+    prettier: prettier {
+        compatible = "zmk,behavior-macro";
+        label = "prettier_macro";
+        #binding-cells = <0>;
+        bindings =
+            <&macro_press>,
+            <&kp LEFT_CONTROL &kp LEFT_ALT &kp O>,
+            <&macro_release>,
+            <&kp LEFT_CONTROL &kp LEFT_ALT &kp O>,
+            <&macro_press>,
+            <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LEFT_ALT &kp P>,
+            <&macro_release>,
+            <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LEFT_ALT &kp P>;
+    };
+    };
 //                  0       1       2                   3       4           5
 //          6       7       8       9                   10      11          12          13
 //                          14      15                  16      17
@@ -178,8 +203,8 @@
         sym2 {
         label = "Punct";
         bindings = <
-                    &kp ATSN    &kp QMARK        &kp LA(N3)                &kp LPRN    &kp RPRN    &kp MINUS
-        &kp SEMI    &kp PRCNT   &kp EXCL         &kp LS(MINUS)             &kp LBRC    &kp RBRC    &kp AMPS    &kp COLON
+                    &kp ATSN    &kp QMARK        &prettier                 &kp LPRN    &kp RPRN    &kp LS(MINUS) 
+        &kp SEMI    &kp PRCNT   &kp EXCL         &ws_find                  &kp LBRC    &kp RBRC    &kp AMPS    &kp COLON
                                 &trans           &trans                    &trans      &trans
 
         >;
