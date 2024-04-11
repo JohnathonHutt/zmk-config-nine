@@ -215,7 +215,7 @@
         bindings = <
                           &hm_l LCTL DOT      &hm_l LALT N0   &hm_l LGUI N1       &hm_r RGUI N2   &hm_r LALT N3    &hm_r RCTL N4
         &td SLASH MINUS   &td STAR PLUS       &kp N5          &kp N6              &kp N7          &kp N8           &kp N9         &kp EQUAL
-                                              &sr LSHIFT AL1  &bt BT_CLR          &bt BT_NXT      &kp RGUI
+                                              &sr LSHIFT AL1  &bt BT_CLR_ALL      &bt BT_NXT      &kp RGUI
         >;
         };
 
@@ -223,7 +223,7 @@
         label = "Nav";
         bindings = <
                             &kp ESC        &kp LG(LS(LBKT))    &kp LG(LS(RBKT))         &mt LG(V) LG(C)     &kp UP    &kp BKSP
-        &td LG(GRAVE) TAB   &kp DEL        &kp LG(LBKT)        &kp LG(RBKT)             &kp LEFT            &kp DOWN  &kp RIGHT   &kp RET
+        &kp TAB             &kp DEL        &kp LG(LBKT)        &kp LG(RBKT)             &kp LEFT            &kp DOWN  &kp RIGHT   &kp RET
                                            &sr LSHIFT AL1      &kp LALT                 &kp LSHIFT          &kp RGUI
         >;
         };
