@@ -187,7 +187,7 @@
         bindings = <
                     &kp V       &kp W               &kp P           &kp M       &kp J                &kp F
         &kp Q       &kp Z       &kp X               &kp B           &kp K       &kp SQT              &kp Y     &kp DOT
-                                &sr LSHIFT AL1      &none           &none       &sl AL2U
+                                &sr LSHIFT AL1      &none           &caps_alpha2macro   &to AL1
         >;
         }; 
         
@@ -222,7 +222,7 @@
         sys {
         label = "Nav";
         bindings = <
-                            &kp ESC        &kp LG(LS(LBKT))    &kp LG(LS(RBKT))         &mt LG(V) LG(C)     &kp UP    &kp BKSP
+                            &kp ESC        &kp LG(LS(LBKT))    &kp LG(LS(RBKT))         &kp LC(BKSP)        &kp UP    &kp BKSP
         &kp TAB             &kp DEL        &kp LG(LBKT)        &kp LG(RBKT)             &kp LEFT            &kp DOWN  &kp RIGHT   &kp RET
                                            &sr LSHIFT AL1      &kp LALT                 &kp LSHIFT          &kp RGUI
         >;
