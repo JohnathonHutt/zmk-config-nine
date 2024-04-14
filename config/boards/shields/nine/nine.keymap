@@ -222,7 +222,7 @@
         sys {
         label = "Nav";
         bindings = <
-                            &kp ESC        &kp LG(LS(LBKT))    &kp LG(LS(RBKT))         &kp LC(BKSP)        &kp UP    &kp BKSP
+                            &kp ESC        &kp LG(LS(LBKT))    &kp LG(LS(RBKT))         &kp LALT(BKSP)        &kp UP    &kp BKSP
         &kp TAB             &kp DEL        &kp LG(LBKT)        &kp LG(RBKT)             &kp LEFT            &kp DOWN  &kp RIGHT   &kp RET
                                            &sr LSHIFT AL1      &kp LALT                 &kp LSHIFT          &kp RGUI
         >;
