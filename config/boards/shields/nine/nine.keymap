@@ -25,39 +25,10 @@
 #define SM2 3
 #define NUM 4
 #define SYS 5
-#define FUN 6
-#define AL2U 7
+#define AL2U 6
 / { 
     combos {
         compatible = "zmk,combos";
-        combo_sys {
-            timeout-ms = <30>;
-        key-positions = <3 4 5>;
-            bindings = <&to SYS>;
-        };
-        combo_caps {
-            timeout-ms = <30>;
-        key-positions = <10 11 12>;
-            bindings = <&caps_word>;
-        };
-        combo_num {
-            timeout-ms = <30>;
-            key-positions = <0 1 2>;
-            bindings = <&to NUM>;
-            layers = <AL1>;
-        };
-        combo_fun  {
-            timeout-ms = <10>;
-            key-positions = <7 8>;
-            bindings = <&to FUN>;
-        layers = <AL1>;
-        };
-        lalt {
-            timeout-ms = <20>;
-        key-positions = <8 9>;
-            bindings = <&kp LALT>; 
-        layers = <SYS>;
-        };
     };
 
     behaviors {
@@ -228,16 +199,8 @@
         >;
         };
 
-        fun {
-        label = "Fn";
-            bindings = <
-                        &kp F11   &kp F10   &kp F1        &kp F2   &kp F3   &kp F4
-        &kp C_VOL_DN    &kp F12   &kp F5    &kp F6        &kp F7   &kp F8   &kp F9  &kp C_VOL_UP
-                                  &to AL1   &none         &none    &kp C_MUTE
-                >;
-        };
-                alpha2cap {
-                label = "Al2Caps";
+        alpha2cap {
+        label = "Al2Caps";
         bindings = <
                     &kp LS(V)   &kp LS(W)   &kp LS(P)           &kp LS(M)   &kp LS(J)    &kp LS(F) 
         &kp LS(Q)   &kp LS(Z)   &kp LS(X)   &kp LS(B)           &kp LS(K)   &kp DQT      &kp LS(Y)   &kp COMMA
