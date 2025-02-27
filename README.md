@@ -6,5 +6,5 @@ If you would like to modify the keymap, you can fork this repository.
 
 This work is licensed with an [MIT License](LICENSE).
 
-# This repo also contains configs for most of my 18 key layout boards on their own branches (probably not the ideal way to do it).
+## This repo also contains configs for most of my 18 key layout boards on their own branches (probably not the ideal way to do it).
 
